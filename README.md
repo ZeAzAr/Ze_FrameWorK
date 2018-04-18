@@ -1,4 +1,4 @@
 # Ze_FrameWorK
-Base CMS FrameWork
+Base CMS Ze FrameWork
 
-CMS HomeMade version PHP POO
+CMS HomeMade version PHP POOCMS HomeMade version PHP-POO
