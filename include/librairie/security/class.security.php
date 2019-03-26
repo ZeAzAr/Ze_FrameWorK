@@ -165,22 +165,22 @@ $sectcat = RecupVar( $_POST, 'sectcat', '' );
 	}
 }
 
-function RecupVarALL($_POST,$_GET,$avecnom=true) {
+function RecupVarALL($ZE_POST,$ZE_GET,$avecnom=true) {
 	$Tabvalue = array();
 	$i=0;
-	foreach ($_POST as $cle => $value) {
+	foreach ($ZE_POST as $cle => $value) {
 			if ($avecnom) {
-				$Tabvalue[$cle] = RecupVar( $_POST,$cle);
+				$Tabvalue[$cle] = RecupVar( $ZE_POST,$cle);
 			} else {
-				$Tabvalue[$i]= RecupVar( $_POST,$cle);
+				$Tabvalue[$i]= RecupVar( $ZE_POST,$cle);
 				$i++;
 			}
 	}
-	foreach ($_GET as $cle => $value) {
+	foreach ($ZE_GET as $cle => $value) {
 			if ($avecnom) {
-				$Tabvalue[$cle] = RecupVar($_GET,$cle);
+				$Tabvalue[$cle] = RecupVar($ZE_GET,$cle);
 			} else {
-				$Tabvalue[$i]= RecupVar($_GET,$cle);
+				$Tabvalue[$i]= RecupVar($ZE_GET,$cle);
 				$i++;
 			}
 	}
